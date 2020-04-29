@@ -146,8 +146,12 @@ header nav ul li.sign-up a {
   text-align: center;
   color: #58402c;
 }
-#features .features-title h3 {
+#features h3 {
   font-size: 24px;
+  color: #58402c;
+}
+#features h3:last-child {
+  margin-top: 80px;
 }
 #features .features-item {
   text-align: center;
@@ -167,4 +171,7 @@ header nav ul li.sign-up a {
 }
 #features .features-item-last img {
   max-width: 250px;
+}
+#features hr {
+  margin: 80px 0;
 }
