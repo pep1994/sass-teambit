@@ -29,6 +29,20 @@ h1 {
   margin-bottom: 30px;
 }
 
+a.button {
+  background-color: #2F478F;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  transition: all 0.4s;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+a.button:hover {
+  background-color: #233569;
+}
+
 .cookie {
   background-color: #FFE7D2;
   padding: 10px;
@@ -206,4 +220,69 @@ header nav ul li.sign-up a {
 }
 #learn .row:first-child {
   margin-top: 0;
+}
+
+#article {
+  background-color: #FFE7D2;
+  padding: 70px 0 40px 0;
+}
+#article .quote {
+  position: absolute;
+  top: -21px;
+  left: 0;
+  width: 40px;
+}
+#article .article-title {
+  text-align: center;
+}
+#article .article-title h2 {
+  color: #58402c;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+#article p {
+  color: #58402c;
+}
+#article .article {
+  max-width: 620px;
+  border-radius: 7px;
+  background-color: #fff;
+  padding: 25px;
+  position: relative;
+  border: 1px solid #bdb5af;
+  margin-bottom: 35px;
+}
+#article .writers {
+  display: flex;
+  align-items: center;
+}
+#article .writers .writer {
+  margin-right: 15px;
+}
+#article .writers h5 {
+  font-size: 14px;
+  color: #2F478F;
+}
+#article .writers span {
+  font-size: 12px;
+}
+#article .writers img {
+  width: 40px;
+}
+#article .cite {
+  line-height: 6px;
+}
+#article .button-container {
+  text-align: center;
+}
+#article .button + span {
+  margin: 0 15px;
+  color: #DFDBD8;
+}
+#article .go-email {
+  text-align: center;
+}
+#article .go-email a {
+  color: #58402c;
+  font-size: 14px;
 }

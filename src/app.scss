@@ -6,6 +6,23 @@ $tertiary-color: #58402c;
 $font-size-link: 14px;
 $font-size-title: 24px;
 
+@mixin button {
+
+  background-color: $secondary-color;
+  color: $white;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-size: $font-size-link;
+  transition: all .4s;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+@mixin spanDivisor {
+    margin: 0 15px;
+    color: #DFDBD8;
+}
+
 
 
 * {
@@ -48,6 +65,14 @@ a {
     font-size: 50px;
     line-height: 70px;
     margin-bottom: 30px;
+  }
+
+  a.button {
+      @include button;
+
+      &:hover {
+        background-color: #233569;
+      }
   }
 
 // header
@@ -166,14 +191,7 @@ header {
     }
 
     a.button {
-      background-color: $secondary-color;
-      color: $white;
-      padding: 7px 15px;
-      border-radius: 7px;
-      font-size: $font-size-link;
-      transition: all .4s;
-      margin-bottom: 15px;
-      display: inline-block;
+      @include button;
 
       &:hover {
         background-color: #233569;
@@ -184,8 +202,7 @@ header {
     }
 
     span {
-      margin: 0 15px;
-      color: #DFDBD8;
+     @include spanDivisor;
     }
   }
 
@@ -298,6 +315,91 @@ header {
       margin-top: 0;
     }
   }
+}
+
+// article
+
+#article {
+
+  background-color: $primary-color;
+  padding: 70px 0 40px 0;
+
+  .quote {
+    position: absolute;
+    top: -21px;
+    left: 0;
+    width: 40px;
+  }
+
+  .article-title {
+    text-align: center;
+
+    h2 {
+    color: $tertiary-color;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  }
+
+  p {
+    color: $tertiary-color;
+  }
+
+  .article {
+    max-width: 620px;
+    border-radius: 7px;
+    background-color: $white;
+    padding: 25px;
+    position: relative;
+    border: 1px solid #bdb5af;
+    margin-bottom: 35px;
+  }
+
+  .writers {
+    display: flex;
+    align-items: center;
+
+    .writer {
+      margin-right: 15px;
+    }
+
+    h5 {
+      font-size: $font-size-link;
+      color: $secondary-color;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    img {
+      width: 40px;
+    }
+
+  }
+
+  .cite {
+    line-height: 6px;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .button + span {
+    @include spanDivisor;
+  }
+
+  .go-email {
+    text-align: center;
+    a {
+      color: $tertiary-color;
+      font-size: $font-size-link;
+    }
+  }
+
+  
 }
 
 
