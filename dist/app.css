@@ -8,8 +8,11 @@
 a {
   color: #000;
 }
+a:hover {
+  text-decoration: none;
+}
 
-.logo-google {
+.logo-img {
   width: 25px;
   vertical-align: middle;
 }
@@ -19,6 +22,13 @@ ul {
   margin: 0;
 }
 
+h1 {
+  color: #58402c;
+  font-size: 50px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
 .cookie {
   background-color: #FFE7D2;
   padding: 10px;
@@ -26,16 +36,13 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
 .cookie p {
   font-size: 12px;
   margin: 0;
 }
-
 .cookie a {
   color: #2F478F;
 }
-
 .cookie a:hover {
   text-decoration: none;
 }
@@ -43,57 +50,97 @@ ul {
 header {
   border-bottom: solid 1px #BDB5AF;
 }
-
 header nav {
   padding: 20px 0;
 }
-
 header nav .logo {
   display: flex;
   align-items: center;
   height: 100%;
 }
-
 header nav .logo a:hover {
   text-decoration: none;
   color: #000;
 }
-
 header nav .nav-menu a {
   font-size: 14px;
 }
-
 header nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
 header nav ul li {
   margin-left: 35px;
 }
-
 header nav ul li:hover a {
   text-decoration: none;
   color: #2F478F;
 }
-
 header nav ul li.sign-up {
   padding: 4px 10px;
   border: solid 1px #2F478F;
   border-radius: 8px;
 }
-
 header nav ul li.sign-up:hover {
   background-color: #2F478F;
   color: #fff;
 }
-
 header nav ul li.sign-up:hover a {
   color: #fff;
 }
-
 header nav ul li.sign-up a {
   color: #2F478F;
 }
 
+#hero {
+  padding: 100px 0;
+}
+#hero .hero-left p {
+  color: #58402c;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+#hero .hero-left a {
+  color: #58402c;
+  font-size: 14px;
+  display: block;
+}
+#hero .hero-left a i {
+  font-size: 12px;
+}
+#hero .hero-left a.button {
+  background-color: #2F478F;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  transition: all 0.4s;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#hero .hero-left a.button:hover {
+  background-color: #233569;
+}
+#hero .hero-left .col-xs-12 {
+  padding-left: 15px;
+}
+#hero .hero-left span {
+  margin: 0 15px;
+  color: #DFDBD8;
+}
+#hero .hero-right {
+  height: 350px;
+  background-image: url(../img/illustration-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#features {
+  background-color: #FFE7D2;
+}
+#features img {
+  width: 150px;
+}
