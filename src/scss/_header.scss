@@ -1,0 +1,87 @@
+.cookie {
+    background-color: $primary-color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 12px;
+      margin: 0;
+    }
+    a {
+      color: $secondary-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+
+header {
+  border-bottom: solid 1px #BDB5AF;
+
+  nav {
+    padding: 20px 0;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .nav-menu {
+
+      a {
+      font-size: $font-size-link;
+    }
+
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      li {
+        margin-left: 35px;
+
+        &:hover {
+
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+          }
+          
+        }
+  
+        &.sign-up {
+          padding: 4px 10px;
+          border: solid 1px $secondary-color;
+          border-radius: 8px;
+
+          &:hover {
+              background-color: $secondary-color;
+              color: $white;
+
+              a {
+            color: $white;
+
+              }
+            }
+  
+          a {
+            color: $secondary-color;
+        
+          }
+        }
+      }
+    }
+  }
+
+}

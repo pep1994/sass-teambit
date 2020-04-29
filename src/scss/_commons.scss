@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+    
+  }
+
+  .logo-img {
+    width: 25px;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  h1 {
+    color: $tertiary-color;
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  a.button {
+      @include button;
+
+      &:hover {
+        background-color: #233569;
+      }
+  }

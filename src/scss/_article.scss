@@ -1,0 +1,81 @@
+#article {
+
+  background-color: $primary-color;
+  padding: 70px 0 40px 0;
+
+  .quote {
+    position: absolute;
+    top: -21px;
+    left: 0;
+    width: 40px;
+  }
+
+  .article-title {
+    text-align: center;
+
+    h2 {
+    color: $tertiary-color;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  }
+
+  p {
+    color: $tertiary-color;
+  }
+
+  .article {
+    max-width: 620px;
+    border-radius: 7px;
+    background-color: $white;
+    padding: 25px;
+    position: relative;
+    border: 1px solid #bdb5af;
+    margin-bottom: 35px;
+  }
+
+  .writers {
+    display: flex;
+    align-items: center;
+
+    .writer {
+      margin-right: 15px;
+    }
+
+    h5 {
+      font-size: $font-size-link;
+      color: $secondary-color;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    img {
+      width: 40px;
+    }
+
+  }
+
+  .cite {
+    line-height: 6px;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .button + span {
+    @include spanDivisor;
+  }
+
+  .go-email {
+    text-align: center;
+    a {
+      color: $tertiary-color;
+      font-size: $font-size-link;
+    }
+  }
+
+}
