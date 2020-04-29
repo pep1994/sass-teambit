@@ -2,20 +2,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.row {
-  border: solid 1px black;
-  height: 100px;
+a {
+  color: #000;
 }
 
-.row [class*=col] {
-  border: solid 1px black;
-  height: 100px;
+.logo-google {
+  width: 25px;
+  vertical-align: middle;
 }
 
-section {
-  background-color: lightcoral;
-  border: solid 1px black;
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.cookie {
+  background-color: #FFE7D2;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.cookie a {
+  color: #2F478F;
+}
+
+.cookie a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: solid 1px #BDB5AF;
+}
+
+header nav {
+  padding: 20px 0;
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav .logo a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+header nav .nav-menu a {
+  font-size: 14px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 35px;
+}
+
+header nav ul li:hover a {
+  text-decoration: none;
+  color: #2F478F;
+}
+
+header nav ul li.sign-up {
+  padding: 4px 10px;
+  border: solid 1px #2F478F;
+  border-radius: 8px;
+}
+
+header nav ul li.sign-up:hover {
+  background-color: #2F478F;
+  color: #fff;
+}
+
+header nav ul li.sign-up:hover a {
+  color: #fff;
+}
+
+header nav ul li.sign-up a {
+  color: #2F478F;
 }
 

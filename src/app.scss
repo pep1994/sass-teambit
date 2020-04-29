@@ -1,0 +1,139 @@
+
+$primary-color: #FFE7D2;
+$secondary-color: #2F478F;
+$white: #fff;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+// .row {
+//   border: solid 1px black;
+
+//   [class*=col] {
+//   border: solid 1px black;
+  
+//   }
+
+// }
+
+a {
+    color: #000;
+  }
+
+  .logo-google {
+    width: 25px;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+// header
+
+.cookie {
+    background-color: $primary-color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 12px;
+      margin: 0;
+    }
+    a {
+      color: $secondary-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+header {
+  border-bottom: solid 1px #BDB5AF;
+
+  nav {
+    padding: 20px 0;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .nav-menu {
+
+      a {
+      font-size: 14px;
+    }
+
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      li {
+        margin-left: 35px;
+
+        &:hover {
+
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+          }
+          
+        }
+  
+        &.sign-up {
+          padding: 4px 10px;
+          border: solid 1px $secondary-color;
+          border-radius: 8px;
+
+          &:hover {
+              background-color: $secondary-color;
+              color: $white;
+
+              a {
+            color: $white;
+
+              }
+            }
+  
+          a {
+            color: $secondary-color;
+        
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+section {
+  // background-color: lightcoral;
+  
+  // border: solid 1px black;
+}
