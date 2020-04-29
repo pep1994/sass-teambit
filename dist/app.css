@@ -140,7 +140,31 @@ header nav ul li.sign-up a {
 
 #features {
   background-color: #FFE7D2;
+  padding: 80px 0;
 }
-#features img {
-  width: 150px;
+#features .features-title {
+  text-align: center;
+  color: #58402c;
+}
+#features .features-title h3 {
+  font-size: 24px;
+}
+#features .features-item {
+  text-align: center;
+  padding: 30px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#features .features-item img {
+  max-width: 140px;
+}
+#features .features-item-last {
+  text-align: center;
+  margin-top: 30px;
+}
+#features .features-item-last img {
+  max-width: 250px;
 }
