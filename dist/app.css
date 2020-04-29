@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  border: solid 1px black;
+  height: 100px;
+}
+
+.row [class*=col] {
+  border: solid 1px black;
+  height: 100px;
+}
+
+section {
+  background-color: lightcoral;
+  border: solid 1px black;
+}
+
