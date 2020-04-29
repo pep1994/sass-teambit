@@ -4,6 +4,8 @@ $secondary-color: #2F478F;
 $white: #fff;
 $tertiary-color: #58402c;
 $font-size-link: 14px;
+$font-size-title: 24px;
+
 
 
 * {
@@ -209,7 +211,7 @@ header {
   }
 
   h3 {
-      font-size: 24px;
+      font-size: $font-size-title;
       color: $tertiary-color;
 
       &:last-child {
@@ -247,11 +249,55 @@ header {
   }
 }
 
+// learn
 
+#learn {
+  padding: 80px 0;
 
+  .slide-container {
 
-section {
-  // background-color: lightcoral;
+    img {
+    width: 100%;
+  }
+
+  }
   
-  // border: solid 1px black;
+  .caption {
+
+    h3 {
+      font-size: $font-size-title;
+      color: $tertiary-color;
+    }
+
+    p {
+      font-size: 18px;
+      color: $tertiary-color;
+    }
+
+    a {
+      color: $secondary-color;
+      font-size: 18px;
+    }
+
+    .img-container {
+      margin-top: 40px;
+      margin-left: 30px;
+
+      img {
+      max-width: 220px;
+    }
+
+    }
+
+  }
+
+  .row {
+    margin-top: 100px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
+
+

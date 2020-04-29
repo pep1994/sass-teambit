@@ -175,3 +175,35 @@ header nav ul li.sign-up a {
 #features hr {
   margin: 80px 0;
 }
+
+#learn {
+  padding: 80px 0;
+}
+#learn .slide-container img {
+  width: 100%;
+}
+#learn .caption h3 {
+  font-size: 24px;
+  color: #58402c;
+}
+#learn .caption p {
+  font-size: 18px;
+  color: #58402c;
+}
+#learn .caption a {
+  color: #2F478F;
+  font-size: 18px;
+}
+#learn .caption .img-container {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+#learn .caption .img-container img {
+  max-width: 220px;
+}
+#learn .row {
+  margin-top: 100px;
+}
+#learn .row:first-child {
+  margin-top: 0;
+}
