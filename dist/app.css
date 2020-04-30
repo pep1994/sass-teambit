@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+main {
+  margin-top: 67px;
+}
+
 a {
   color: #000;
 }
@@ -43,6 +47,10 @@ a.button:hover {
   background-color: #233569;
 }
 
+header .hamburger-menu.active {
+  display: block;
+}
+
 .cookie {
   background-color: #FFE7D2;
   padding: 10px;
@@ -62,10 +70,15 @@ a.button:hover {
 }
 
 header {
-  border-bottom: solid 1px #BDB5AF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
 }
 header nav {
   padding: 20px 0;
+  border-bottom: solid 1px #BDB5AF;
 }
 header nav .logo {
   display: flex;
@@ -133,6 +146,49 @@ header nav .menu-tendina {
 }
 header nav .menu-tendina li {
   margin: 0 0 10px 0;
+}
+header .close {
+  display: none;
+}
+header .hamburger-menu {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 20;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: none;
+}
+header .hamburger-menu span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: -9px;
+  right: 13px;
+  transform: rotate(45deg);
+  border-top: solid 1px #BDB5AF;
+  border-left: solid 1px #BDB5AF;
+}
+header .hamburger-menu li {
+  margin-top: 15px;
+}
+header .hamburger-menu a {
+  font-size: 14px;
+}
+header .hamburger-menu .button {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #2F478F;
+  color: #2F478F;
+}
+header .hamburger-menu .button:hover {
+  background-color: #2F478F;
+  color: #fff;
 }
 
 #hero {
@@ -396,6 +452,12 @@ footer .footer-right h5 {
     margin-left: 0;
   }
 
+  header {
+    border-bottom: solid 1px #BDB5AF;
+  }
+  header nav {
+    border: none;
+  }
   header nav .nav-menu ul {
     display: none;
   }
@@ -440,5 +502,13 @@ footer .footer-right h5 {
 @media screen and (max-width: 439px) {
   #hero .hero-right {
     max-height: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .hamburger-menu.active {
+    display: none;
+  }
+  header .hamburger-menu.active span {
+    display: none;
   }
 }

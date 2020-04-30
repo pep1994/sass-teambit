@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+main {
+  margin-top: 67px;
+}
+
 a {
   color: #000;
 
@@ -38,3 +42,8 @@ a {
         background-color: #233569;
       }
   }
+
+  header .hamburger-menu.active {
+    display: block;
+  }
+

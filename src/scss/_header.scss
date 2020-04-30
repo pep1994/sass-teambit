@@ -20,10 +20,16 @@
   
 
 header {
-  border-bottom: solid 1px #BDB5AF;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $white;
 
   nav {
     padding: 20px 0;
+    border-bottom: solid 1px #BDB5AF;
 
     .logo {
       display: flex;
@@ -113,6 +119,58 @@ header {
     }
   }
 
+  }
+
+  .close {
+    display: none;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    z-index: 20;
+    box-shadow: 0 3px 5px rgba($color: #000000, $alpha: .2);
+    padding: 20px;
+    display: none;
+    
+    
+
+    span {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: $white;
+      position: absolute;
+      top: -9px;
+      right: 13px;
+      transform: rotate(45deg);
+      border-top: solid 1px #BDB5AF;
+      border-left: solid 1px #BDB5AF;
+    }
+    
+    li {
+      margin-top: 15px;
+    }
+
+    a {
+      font-size: $font-size-link;
+    }
+
+    .button {
+      display: block;
+      text-align: center;
+      background-color: $white;
+      border: solid 1px $secondary-color;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $white;
+      }
+    }
   }
 
 }

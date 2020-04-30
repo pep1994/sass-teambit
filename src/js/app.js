@@ -14,5 +14,12 @@ $(document).ready(function () {
     
   });
 
+  $('.hamburger').click(function () { 
+
+    $('.hamburger-bars').toggle();
+    $('.close').toggle();
+    $('.hamburger-menu').toggleClass('active');
+
+  });
 
 });

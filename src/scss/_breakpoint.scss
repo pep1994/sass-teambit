@@ -58,7 +58,9 @@
   }
 
   header {
+    border-bottom: solid 1px #BDB5AF;
     nav {
+      border: none;
       .nav-menu {
         ul {
           display: none;
@@ -68,15 +70,17 @@
           display: block;
         }
       }
+   
     }
 
-   
   }
 
    .container {
       max-width: 100%;
-    }
+      
+    } 
 }
+
 
 
 @media screen and (max-width: 575px) {
@@ -132,3 +136,17 @@
     }
 
   }
+
+  @media screen and (min-width: 768px) {
+
+    header {
+
+      .hamburger-menu.active {
+         display: none;
+     
+           span {
+             display: none;
+           }
+       }
+    }
+}
