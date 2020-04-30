@@ -1,0 +1,53 @@
+footer {
+  padding: 80px 0;
+  .footer-left {
+    display: flex;
+
+    .footer-caption {
+      margin-left: 15px;
+
+      p {
+      font-size: 18px;
+      color: $tertiary-color;
+    }
+
+    }
+    
+    img {
+      width: 50px;
+    }
+    
+    a {
+      color: $secondary-color;
+      font-size: 18px;
+      transition: all .4s;
+
+      &:hover {
+        text-decoration: underline;
+        color: #233569;
+      }
+
+    }
+  }
+
+  .footer-right {
+
+    li {
+      line-height: 33px;
+    }
+    
+    a {
+      font-size: $font-size-link;
+      color: $tertiary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    h5 {
+      color: $tertiary-color;
+      font-size: 18px;
+    }
+  }
+}

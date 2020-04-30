@@ -286,3 +286,43 @@ header nav ul li.sign-up a {
   color: #58402c;
   font-size: 14px;
 }
+
+footer {
+  padding: 80px 0;
+}
+footer .footer-left {
+  display: flex;
+}
+footer .footer-left .footer-caption {
+  margin-left: 15px;
+}
+footer .footer-left .footer-caption p {
+  font-size: 18px;
+  color: #58402c;
+}
+footer .footer-left img {
+  width: 50px;
+}
+footer .footer-left a {
+  color: #2F478F;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+footer .footer-left a:hover {
+  text-decoration: underline;
+  color: #233569;
+}
+footer .footer-right li {
+  line-height: 33px;
+}
+footer .footer-right a {
+  font-size: 14px;
+  color: #58402c;
+}
+footer .footer-right a:hover {
+  color: #2F478F;
+}
+footer .footer-right h5 {
+  color: #58402c;
+  font-size: 18px;
+}
