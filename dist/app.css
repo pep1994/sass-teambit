@@ -76,8 +76,21 @@ header nav .logo a:hover {
   text-decoration: none;
   color: #000;
 }
+header nav .nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 header nav .nav-menu a {
   font-size: 14px;
+}
+header nav .nav-menu .hamburger {
+  cursor: pointer;
+  color: #58402c;
+  display: none;
+}
+header nav .nav-menu .hamburger i {
+  font-size: 18px;
 }
 header nav ul {
   display: flex;
@@ -192,6 +205,9 @@ header nav ul li.sign-up a {
 
 #learn {
   padding: 80px 0;
+}
+#learn .show-small {
+  display: none;
 }
 #learn .slide-container img {
   width: 100%;
@@ -325,4 +341,89 @@ footer .footer-right a:hover {
 footer .footer-right h5 {
   color: #58402c;
   font-size: 18px;
+}
+
+@media screen and (max-width: 1199px) {
+  .cookie {
+    display: none;
+  }
+
+  #hero .hero-left {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  #learn .show-small {
+    display: block;
+  }
+  #learn .hide-small {
+    display: none;
+  }
+  #learn .caption {
+    text-align: center;
+  }
+
+  footer .item-footer-right {
+    margin-bottom: 30px;
+  }
+  footer .footer-left {
+    margin-bottom: 50px;
+  }
+  footer .footer-left .logo-footer {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer-left {
+    display: block;
+  }
+  footer .footer-left .footer-caption {
+    margin-left: 0;
+  }
+
+  header nav .nav-menu ul {
+    display: none;
+  }
+  header nav .nav-menu .hamburger {
+    display: block;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  #hero .hero-right {
+    margin-top: 30px;
+    max-height: 250px;
+  }
+  #hero .hero-left {
+    text-align: center;
+  }
+  #hero .hero-left a.button {
+    display: block;
+  }
+  #hero .hero-left a.button:first-child {
+    margin-bottom: 0;
+  }
+  #hero .hero-left span {
+    margin: 7px 0;
+    display: block;
+  }
+
+  #article a.button {
+    display: block;
+  }
+  #article a.button:first-child {
+    margin-bottom: 0;
+  }
+  #article a.button + span {
+    margin: 7px 0;
+    display: block;
+  }
+}
+@media screen and (max-width: 439px) {
+  #hero .hero-right {
+    max-height: 200px;
+  }
 }

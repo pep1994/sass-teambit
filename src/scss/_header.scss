@@ -37,12 +37,27 @@ header {
     }
 
     .nav-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
 
       a {
       font-size: $font-size-link;
-    }
+      }
+
+      .hamburger {
+        cursor: pointer;
+        color: $tertiary-color;
+        display: none;
+
+        i {
+          font-size: 18px;
+        }
+        
+      }
 
     }
+    
     ul {
       display: flex;
       justify-content: flex-end;
