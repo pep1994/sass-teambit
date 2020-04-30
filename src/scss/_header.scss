@@ -58,23 +58,22 @@ header {
 
     }
     
-    ul {
+    .menu {
       display: flex;
       justify-content: flex-end;
       align-items: center;
   
       li {
         margin-left: 35px;
+        position: relative;
 
-        &:hover {
-
-          a {
+        a {
+          &:hover {
             text-decoration: none;
             color: $secondary-color;
           }
-          
         }
-  
+
         &.sign-up {
           padding: 4px 10px;
           border: solid 1px $secondary-color;
@@ -97,6 +96,23 @@ header {
         }
       }
     }
+
+    .menu-tendina {
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba($color: #000000, $alpha: .2);
+    padding: 5px 35px 5px 10px;
+    position: absolute;
+    top: 23px;
+    left: -10px;
+    z-index: 10;
+    background-color: $white;
+    display: none;
+
+    li {
+      margin: 0 0 10px 0;
+    }
+  }
+
   }
 
 }
