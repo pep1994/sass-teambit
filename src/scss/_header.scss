@@ -26,6 +26,7 @@ header {
   width: 100%;
   z-index: 100;
   background-color: $white;
+  transition: top .4s ease;
 
   nav {
     padding: 20px 0;
@@ -72,8 +73,11 @@ header {
       li {
         margin-left: 35px;
         position: relative;
+        transition: all .4s;
 
         a {
+
+          transition: all .4s;
           &:hover {
             text-decoration: none;
             color: $secondary-color;
@@ -85,16 +89,6 @@ header {
           border: solid 1px $secondary-color;
           border-radius: 8px;
 
-          &:hover {
-              background-color: $secondary-color;
-              color: $white;
-
-              a {
-            color: $white;
-
-              }
-            }
-  
           a {
             color: $secondary-color;
         
@@ -136,8 +130,7 @@ header {
     padding: 20px;
     display: none;
     
-    
-
+  
     span {
       display: block;
       width: 16px;

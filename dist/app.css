@@ -75,6 +75,7 @@ header {
   width: 100%;
   z-index: 100;
   background-color: #fff;
+  transition: top 0.4s ease;
 }
 header nav {
   padding: 20px 0;
@@ -113,6 +114,10 @@ header nav .menu {
 header nav .menu li {
   margin-left: 35px;
   position: relative;
+  transition: all 0.4s;
+}
+header nav .menu li a {
+  transition: all 0.4s;
 }
 header nav .menu li a:hover {
   text-decoration: none;
@@ -122,13 +127,6 @@ header nav .menu li.sign-up {
   padding: 4px 10px;
   border: solid 1px #2F478F;
   border-radius: 8px;
-}
-header nav .menu li.sign-up:hover {
-  background-color: #2F478F;
-  color: #fff;
-}
-header nav .menu li.sign-up:hover a {
-  color: #fff;
 }
 header nav .menu li.sign-up a {
   color: #2F478F;
