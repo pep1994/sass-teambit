@@ -3,7 +3,6 @@ $(document).ready(function () {
   var itemMenu = $('.menu li');
   var scrolldocument = $(document).scrollTop();
   var scrollContainerModal = $('.modal-container').scrollTop();
-  var html = $('body').html();
 
   $('.chat').click(function () {
 

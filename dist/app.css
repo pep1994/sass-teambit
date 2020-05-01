@@ -133,7 +133,7 @@ header nav .menu li.sign-up a {
 }
 header nav .menu-tendina {
   border-radius: 6px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 5px 35px 5px 10px;
   position: absolute;
   top: 23px;
@@ -155,7 +155,7 @@ header .hamburger-menu {
   width: 100%;
   background-color: #fff;
   z-index: 20;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   display: none;
 }
@@ -426,17 +426,17 @@ footer .chat {
 }
 footer .chat .msg {
   color: #fff;
-  font-size: 25px;
+  font-size: 24px;
 }
 footer .chat .close2 {
   display: none;
   color: #fff;
-  font-size: 25px;
+  font-size: 24px;
 }
 footer .modal-chat {
   width: 370px;
   background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   position: fixed;
   right: 15px;
@@ -459,7 +459,7 @@ footer .modal-chat .sfondo {
   height: 250px;
   padding: 20px;
   background: linear-gradient(145deg, #ffe7d2, #ffb16c);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   left: 0;
