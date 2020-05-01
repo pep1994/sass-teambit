@@ -411,6 +411,118 @@ footer .footer-right h5 {
   color: #58402c;
   font-size: 18px;
 }
+footer .chat {
+  background-color: #2F478F;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .chat .msg {
+  color: #fff;
+  font-size: 25px;
+}
+footer .chat .close2 {
+  display: none;
+  color: #fff;
+  font-size: 25px;
+}
+footer .modal-chat {
+  width: 370px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  position: fixed;
+  right: 15px;
+  bottom: 120px;
+  overflow-y: auto;
+  display: none;
+}
+footer .modal-chat .header {
+  position: relative;
+  opacity: 1;
+}
+footer .modal-chat .logo {
+  margin-bottom: 20px;
+}
+footer .modal-chat h4 {
+  font-size: 16px;
+}
+footer .modal-chat .sfondo {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  background: linear-gradient(145deg, #ffe7d2, #ffb16c);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+footer .modal-chat .sfondo h2 {
+  font-size: 32px;
+}
+footer .modal-chat .sfondo p {
+  color: rgba(0, 0, 0, 0.7);
+}
+footer .modal-chat .modal-container {
+  padding: 170px 15px 0 15px;
+  overflow-y: auto;
+  height: 300px;
+  position: relative;
+}
+footer .modal-chat .modal-container .modal-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+footer .modal-chat .modal-container .modal-item:first-child .button {
+  border-radius: 18px;
+  padding: 10px 20px;
+}
+footer .modal-chat .modal-container .modal-item .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+footer .modal-chat .modal-container .modal-item p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+footer .modal-chat .modal-container .modal-item img {
+  width: 50px;
+}
+footer .modal-chat .modal-container .modal-item input {
+  width: 240px;
+  padding: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+footer .modal-chat .modal-container .modal-item .check-out {
+  display: flex;
+  align-items: center;
+}
+footer .modal-chat .modal-container .modal-item .check-out a {
+  font-size: 14px;
+  color: #2F478F;
+}
+footer .modal-chat .modal-container .modal-item .check-out img {
+  flex-basis: 30%;
+  margin-right: 10px;
+}
+footer .modal-chat .modal-container .modal-item .check-out .check-out-caption {
+  flex-basis: 70%;
+}
 
 @media screen and (max-width: 1199px) {
   .cookie {
